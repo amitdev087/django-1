@@ -5,8 +5,8 @@ from .models import Article
 class ArticleSerializer(serializers.ModelSerializer) :
     class Meta:
         model = Article
-        fields = [ 'id' , 'title' , 'author' ]
-
+        #fields = [ 'id' , 'title' , 'author' ]
+        fields= "__all__"
 # class ArticleSerializers(serializers.Serializer):
 #     title = serializers.CharField(max_length=100)
 #     author =serializers.CharField(max_length=100)
